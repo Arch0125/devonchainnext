@@ -15,14 +15,13 @@ import {
 const HackerList = () => {
     return ( 
         <Flex width={'100%'} color={'blackAlpha.700'} mt={'20px'} >
-            <TableContainer width={'100vw'} >
-                <Table variant='simple'>
-                    <TableCaption>Imperial to metric conversion factors</TableCaption>
+            <TableContainer width={'100vw'} borderColor={'blackAlpha.200'} rounded={'2xl'} borderWidth={'1px'} >
+                <Table variant={'simple'} textAlign={'center'} >
                     <Thead>
                     <Tr>
-                        <Th>To convert</Th>
-                        <Th>into</Th>
-                        <Th isNumeric>multiply by</Th>
+                        <Th>Name</Th>
+                        <Th>Wallet Address</Th>
+                        <Th>Status</Th>
                     </Tr>
                     </Thead>
                     <Tbody>
