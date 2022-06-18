@@ -8,19 +8,19 @@ const AddHack = () => {
                 <Divider colorScheme={'black'} />
                 <Stack mt={"20px"} spacing={4}>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'} children='Hackathon Name' />
+                        <InputLeftAddon bgColor={'purple.600'} />
                         <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"300px"} />
                     </InputGroup>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'} children='Location' />
+                        <InputLeftAddon bgColor={'purple.600'}  />
                         <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"360px"} />
                     </InputGroup>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'} children='Mode' />
+                        <InputLeftAddon bgColor={'purple.600'}/>
                         <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"380px"} />
                     </InputGroup>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'} children='Prize Pool Wallet' />
+                        <InputLeftAddon bgColor={'purple.600'} />
                         <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"300px"} />
                     </InputGroup>
                     <Text color={'blackAlpha.800'} >Details about Hackathon : <Textarea borderColor={'purple.400'} color={'black'}/></Text>
