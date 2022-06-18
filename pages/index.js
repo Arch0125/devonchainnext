@@ -9,9 +9,10 @@ export default function Home() {
     <Flex flexDirection={"column"} alignItems={"center"} textAlign={"center"} bgColor={"white"} width={'100vw'} height={'100vh'} > 
     <img src="https://svgshare.com/i/iRv.svg" width={"80%"} alt="Purple-Modern-Cryptocurrency-Banner"/>
     <ButtonGroup spacing={"14"} >
+      <Link href='./Attend' >
     <Button colorScheme={"purple"} width={"fit-content"} color={"white"} bgColor={"purple.600"} >
         Attend Hackathon
-    </Button>
+    </Button></Link>
     <Link href='./hackathons' >
     <Button variant={"solid"} colorScheme={"purple"} width={'fit-content'} bgColor={"purple.600"} color={"white"} >
       Organize Hackathon

@@ -8,19 +8,19 @@ const AddHack = () => {
                 <Divider colorScheme={'black'} />
                 <Stack mt={"20px"} spacing={4}>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'}>Name</InputLeftAddon>
+                        <InputLeftAddon bgColor={'purple.600'} color={'white'} >Name</InputLeftAddon>
                         <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"100%"} />
                     </InputGroup>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'}>Date</InputLeftAddon>
+                        <InputLeftAddon bgColor={'purple.600'} color={'white'} >Date</InputLeftAddon>
                         <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"100%"} />
                     </InputGroup>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'}>Mode</InputLeftAddon>
+                        <InputLeftAddon bgColor={'purple.600'} color={'white'} >Mode</InputLeftAddon>
                         <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"100%"} />
                     </InputGroup>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'}>Prize Pool Wallet</InputLeftAddon>
+                        <InputLeftAddon bgColor={'purple.600'} color={'white'} >Prize Pool Wallet</InputLeftAddon>
                         <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"100%"} />
                     </InputGroup>
                     <Text color={'blackAlpha.800'} >Details about Hackathon : <Textarea borderColor={'purple.400'} color={'black'}/></Text>
