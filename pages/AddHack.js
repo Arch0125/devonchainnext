@@ -8,20 +8,20 @@ const AddHack = () => {
                 <Divider colorScheme={'black'} />
                 <Stack mt={"20px"} spacing={4}>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'} />
-                        <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"300px"} />
+                        <InputLeftAddon bgColor={'purple.600'}>Name</InputLeftAddon>
+                        <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"100%"} />
                     </InputGroup>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'}  />
-                        <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"360px"} />
+                        <InputLeftAddon bgColor={'purple.600'}>Date</InputLeftAddon>
+                        <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"100%"} />
                     </InputGroup>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'}/>
-                        <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"380px"} />
+                        <InputLeftAddon bgColor={'purple.600'}>Mode</InputLeftAddon>
+                        <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"100%"} />
                     </InputGroup>
                     <InputGroup mt={'2'} >
-                        <InputLeftAddon bgColor={'purple.600'} />
-                        <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"300px"} />
+                        <InputLeftAddon bgColor={'purple.600'}>Prize Pool Wallet</InputLeftAddon>
+                        <Input color={'blackAlpha.600'} placeholder='phone number' borderColor={'purple.400'} width={"100%"} />
                     </InputGroup>
                     <Text color={'blackAlpha.800'} >Details about Hackathon : <Textarea borderColor={'purple.400'} color={'black'}/></Text>
                     <Button bgColor={"purple.600"} color={'white'} variant={"solid"} colorScheme={"purple"} >Launch &nbsp; 🚀</Button>
