@@ -10,6 +10,11 @@ const Hackathons = () => {
             </Text>
             <Box width={"90vw"} height={"1px"} bgColor={"purple"} />
             <Flex flexDirection={"row"} width={"100vw"} height={"fit-content"} wrap={"wrap"} padding={'30px'} >
+            <Link href='./HackathonDetail' >
+                <Flex flexDirection={"column"} textAlign={"center"} mx={"10px"} my={"10px"} justifyContent={'center'} width={"200px"} height={"200px"} border={"2px"} borderColor={"gray.200"} rounded={'2xl'} >
+                    <Text color={"blackAlpha.700"} >Web3hack</Text>
+                </Flex>
+                </Link>
                 <Link href='./AddHack' >
                 <Flex flexDirection={"column"} textAlign={"center"} mx={"10px"} my={"10px"} justifyContent={'center'} width={"200px"} height={"200px"} border={"2px"} borderColor={"gray.200"} rounded={'2xl'} >
                     <Text color={"blackAlpha.700"} >Organize new <br/> Hackathon</Text>
