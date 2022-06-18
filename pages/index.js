@@ -16,6 +16,10 @@ export default function Home() {
     <Button variant={"solid"} colorScheme={"purple"} width={'fit-content'} bgColor={"purple.600"} color={"white"} >
       Organize Hackathon
     </Button></Link>
+    <Link href='./Sponsorship' >
+    <Button variant={"solid"} colorScheme={"purple"} width={'fit-content'} bgColor={"purple.600"} color={"white"} >
+      Sponsor Hackathon
+    </Button></Link>
     </ButtonGroup>
     </Flex>
   )
