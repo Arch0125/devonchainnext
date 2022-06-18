@@ -1,5 +1,6 @@
 import { Button, Divider, Flex ,Text} from '@chakra-ui/react';
 import React from 'react';
+import HackerList from '../src/components/HackerList';
 
 const HackathonDetail = () => {
     return ( 
@@ -24,6 +25,7 @@ const HackathonDetail = () => {
                 <Flex flexDirection={'column'} padding={'20px'} mt={'30px'} justifyContent={'center'} alignItems={'start'} width={'80%'} borderColor={'gray.200'} borderWidth={'2px'} rounded={'2xl'} shadow={'xl'} height={'fit-content'} bgColor={'white'} >
                     <Text color={'purple.700'} alignSelf={'center'} fontSize={'xl'} fontWeight={'bold'} >👩‍💻 Hackers List 👨‍💻</Text>
                     <Divider/>
+                    <HackerList/>
                 </Flex>
             </Flex>
             <Flex width={'30%'} flexDirection={'column'} height={'100vh'} >
