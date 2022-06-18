@@ -1,6 +1,7 @@
 import { Button, ButtonGroup, Flex, Text } from '@chakra-ui/react'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -11,9 +12,10 @@ export default function Home() {
     <Button colorScheme={"purple"} width={"fit-content"} color={"white"} bgColor={"purple.600"} >
         Attend Hackathon
     </Button>
+    <Link href='./hackathons' >
     <Button variant={"solid"} colorScheme={"purple"} width={'fit-content'} bgColor={"purple.600"} color={"white"} >
       Organize Hackathon
-    </Button>
+    </Button></Link>
     </ButtonGroup>
     </Flex>
   )
