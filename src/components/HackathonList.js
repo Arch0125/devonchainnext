@@ -33,7 +33,7 @@ import UseContract from '../hooks/UseContract';
                     <>
                     <Button color={'blueviolet'} fontSize={'xl'} >{hacks[index].name}</Button>
                         <ButtonGroup>
-                        <Button onClick={participate(index)} variant={'solid'} colorScheme={'purple'} >Participate 🚀</Button>
+                        <Button variant={'solid'} colorScheme={'purple'} >Participate 🚀</Button>
                     </ButtonGroup>
                     </>
                 ))
