@@ -94,24 +94,6 @@
 	{
 		"inputs": [
 			{
-				"internalType": "address",
-				"name": "hacker",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_key",
-				"type": "uint256"
-			}
-		],
-		"name": "setWinner",
-		"outputs": [],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
 				"internalType": "uint256",
 				"name": "_key",
 				"type": "uint256"
@@ -146,6 +128,19 @@
 		"type": "function"
 	},
 	{
+		"inputs": [],
+		"name": "getCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
 		"inputs": [
 			{
 				"internalType": "uint256",
@@ -153,7 +148,7 @@
 				"type": "uint256"
 			}
 		],
-		"name": "getHackathon",
+		"name": "getHackList",
 		"outputs": [
 			{
 				"components": [
@@ -209,7 +204,7 @@
 				"type": "uint256"
 			}
 		],
-		"name": "getHackList",
+		"name": "getHackathon",
 		"outputs": [
 			{
 				"components": [
@@ -501,6 +496,24 @@
 			}
 		],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "hacker",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_key",
+				"type": "uint256"
+			}
+		],
+		"name": "setWinner",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
