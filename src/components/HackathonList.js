@@ -23,6 +23,10 @@ import UseContract from '../hooks/UseContract';
         }
     }
 
+    const apply=async()=>{
+        await contract.applyHackathon('0xD4Ab9d0cf7242B7E14df24B1b0F6C10eCc05fF72',1)
+    }
+
     return (
         <>
         <Button onClick={getList} colorScheme={'blackAlpha'} mt={'10px'} >Refresh</Button> 
@@ -33,7 +37,7 @@ import UseContract from '../hooks/UseContract';
                     <>
                     <Button color={'blueviolet'} fontSize={'xl'} >{hacks[index].name}</Button>
                         <ButtonGroup>
-                        <Button variant={'solid'} colorScheme={'purple'} >Participate 🚀</Button>
+                        <Button onClickCapture={apply} variant={'solid'} colorScheme={'purple'} >Participate 🚀</Button>
                     </ButtonGroup>
                     </>
                 ))
