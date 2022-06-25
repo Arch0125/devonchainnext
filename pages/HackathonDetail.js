@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import HackerList from '../src/components/HackerList';
 import UseContract from '../src/hooks/UseContract';
 import { useEffect } from 'react';
+import GetAccount from '../src//hooks/GetAccount';
+import GetBalance from '../src/hooks/GetBalance';
 
 const HackathonDetail = () => {
     const[detlist,setDetlist]=useState([]);
@@ -32,8 +34,8 @@ const HackathonDetail = () => {
                 <Flex flexDirection={'column'} padding={'20px'} mt={'30px'} justifyContent={'center'} alignItems={'start'} width={'80%'} borderColor={'gray.200'} borderWidth={'2px'} rounded={'2xl'} shadow={'xl'} height={'fit-content'} bgColor={'white'} >
                     <Text color={'purple.700'} alignSelf={'center'} fontSize={'xl'} fontWeight={'bold'} >📄 Wallet Details 📄</Text>
                     <Divider/>
-                    <Text color={'blackAlpha.700'} mt={'2'} fontSize={'18px'} >Prize Pool Wallet : </Text>
-                    <Text color={'blackAlpha.700'} mt={'2'} fontSize={'18px'} >Current Balance : </Text>
+                    <Text color={'blackAlpha.700'} mt={'2'} fontSize={'18px'} >Prize Pool Wallet : {GetAccount()}</Text>
+                    <Text color={'blackAlpha.700'} mt={'2'} fontSize={'18px'} >Current Balance : {GetBalance()}</Text>
                     <Divider/>
                     <Text color={'blackAlpha.700'} mt={'2'} fontSize={'18px'} fontWeight={'bold'} >Recent Transactions </Text>
                 </Flex>
