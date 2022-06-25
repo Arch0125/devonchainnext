@@ -17,7 +17,6 @@ const HackathonDetail = () => {
         var participants =  await contract.getParticipants(1);
         setDetlist(details)
         setParts(participants);
-        console.log(parts)
     }
 
     return ( 

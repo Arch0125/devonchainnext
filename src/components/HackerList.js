@@ -42,12 +42,18 @@ const HackerList = () => {
                     <Tr>
                         <Th>Wallet Address</Th>
                         <Th>Status</Th>
+                        <Th>Action</Th>
                     </Tr>
                     </Thead>
                     <Tbody>
                     <Tr>
                         <Td>{parts[0]}</Td>
                         <Td>{parts[2]}</Td>
+                        <Td>
+                            {
+                                (parts[2]==='Accepted')?<Button variant={"solid"} colorScheme={'purple'} >Accept</Button>:<div>✅</div>
+                            }
+                        </Td>
                     </Tr>
                     </Tbody>
                 </Table>
