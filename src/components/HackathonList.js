@@ -24,7 +24,7 @@ import UseContract from '../hooks/UseContract';
     }
 
     const apply=async()=>{
-        await contract.applyHackathon('0xD4Ab9d0cf7242B7E14df24B1b0F6C10eCc05fF72',1)
+        await contract.applyHackathon(1)
     }
 
     return (

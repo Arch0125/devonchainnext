@@ -35,11 +35,6 @@
 	{
 		"inputs": [
 			{
-				"internalType": "address",
-				"name": "org",
-				"type": "address"
-			},
-			{
 				"internalType": "uint256",
 				"name": "_key",
 				"type": "uint256"
@@ -87,6 +82,24 @@
 			}
 		],
 		"name": "approveSponsorship",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "hacker",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_key",
+				"type": "uint256"
+			}
+		],
+		"name": "setWinner",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -148,7 +161,7 @@
 				"type": "uint256"
 			}
 		],
-		"name": "getHackList",
+		"name": "getHackathon",
 		"outputs": [
 			{
 				"components": [
@@ -204,7 +217,7 @@
 				"type": "uint256"
 			}
 		],
-		"name": "getHackathon",
+		"name": "getHackList",
 		"outputs": [
 			{
 				"components": [
@@ -281,6 +294,47 @@
 					}
 				],
 				"internalType": "struct DevOnChain.Participant",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_key",
+				"type": "uint256"
+			}
+		],
+		"name": "getSponsors",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "amount",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "hash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					}
+				],
+				"internalType": "struct DevOnChain.Sponsor",
 				"name": "",
 				"type": "tuple"
 			}
@@ -496,24 +550,6 @@
 			}
 		],
 		"stateMutability": "view",
-		"type": "function"
-	},
-	{
-		"inputs": [
-			{
-				"internalType": "address",
-				"name": "hacker",
-				"type": "address"
-			},
-			{
-				"internalType": "uint256",
-				"name": "_key",
-				"type": "uint256"
-			}
-		],
-		"name": "setWinner",
-		"outputs": [],
-		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{

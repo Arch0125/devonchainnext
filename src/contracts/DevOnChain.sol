@@ -41,9 +41,10 @@ contract DevOnChain{
         hacklist[hackid]=Hackathon(hackid,msg.sender,_name,_date,_mode,prize,_desc);
     }
 
-    function applyHackathon(address org,uint _key)public{
+    function applyHackathon(uint _key)public{
+        address org = hacklist[_key].org;
         myapplications[msg.sender][_key]=Participant(msg.sender,hackathons[org][_key].name,'Accepted');
-        participants[hackathons[org][_key].org][_key]=Participant(msg.sender,hackathons[org][_key].name,'Accepted');
+        participants[hacklist[_key].org][_key]=Participant(msg.sender,hacklist[_key].name,'Accepted');    
     }
 
     function applySponsor(uint256 _key,string memory _amount, string memory _hash)public{
@@ -75,5 +76,13 @@ contract DevOnChain{
 
     function getParticipants(uint256 _key)public view returns(Participant memory){
         return participants[msg.sender][_key];
+    }
+
+    function getSponsors(uint _key)public view returns(Sponsor memory){
+        return sponsors[_key];
+    }
+
+    function getCount() public view returns(uint256){
+        return hackid;
     }
 }
