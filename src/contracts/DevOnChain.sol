@@ -82,6 +82,10 @@ contract DevOnChain{
         return sponsors[_key];
     }
 
+    function getMySponsors(uint256 _key)public view returns(Sponsor memory){
+        return mysponsors[msg.sender][_key];
+    }
+
     function getCount() public view returns(uint256){
         return hackid;
     }
