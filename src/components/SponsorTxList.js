@@ -9,23 +9,12 @@ import {
     Td,
     TableCaption,
     TableContainer,
-    Flex
+    Flex,
+    Button
   } from '@chakra-ui/react'
 import UseContract from '../hooks/UseContract';
 const SponsorTxList = () => {
-    const[reqs,setReqs]=useState([])
-
-    const getReqList=async()=>{
-        var listcount = await contract.getCount();
-        var parselist = listcount.toString();
-        setHacks([]);
-        for(let i =1;i<=parselist;i++){
-            var hack = await contract.getHackList(i);
-           {
-                setHacks((hacks)=>[...hacks,hack])
-            }
-        }
-    }
+    
 
     return ( 
         <Flex width={'100%'} color={'blackAlpha.700'} mt={'20px'} >
