@@ -5,6 +5,7 @@ import UseContract from '../src/hooks/UseContract';
 import { useEffect } from 'react';
 import GetAccount from '../src//hooks/GetAccount';
 import GetBalance from '../src/hooks/GetBalance';
+import ReqSponsor from '../src/components/ReqSponsor';
 
 const HackathonDetail = () => {
     const[detlist,setDetlist]=useState([]);
@@ -27,7 +28,7 @@ const HackathonDetail = () => {
                     <Divider/>
                     <Flex alignItems={'center'} mt={"10px"} justifyContent={'space-between'} flexDirection={'row'} padding={'10px'} bgColor={'gray.50'} width={'100%'} color={'purple.700'} > 
                     <Button color={'blueviolet'} fontSize={'xl'} ><img src='https://cryptologos.cc/logos/polygon-matic-logo.svg?v=022' width={'20px'} /> &nbsp; Polygon</Button>
-                    <Button variant={'solid'} colorScheme={'purple'} >Submit Proposal</Button>
+                    <ReqSponsor/>
                     </Flex>
                 </Flex>
                 <Flex flexDirection={'column'} padding={'20px'} mt={'30px'} justifyContent={'center'} alignItems={'start'} width={'80%'} borderColor={'gray.200'} borderWidth={'2px'} rounded={'2xl'} shadow={'xl'} height={'fit-content'} bgColor={'white'} >
