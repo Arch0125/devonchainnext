@@ -1,8 +1,11 @@
 import { Divider, Flex,Text,Box } from '@chakra-ui/react';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
+import UseContract from '../src/hooks/UseContract';
 
 const Hackathons = () => {
+
+
     return ( 
         <Flex flexDirection={"column"} height={"100vh"} width={"100vw"} bgColor={"white"} padding={'40px'} >
             <Text color={"purple.700"} fontSize={"4xl"} fontFamily={"heading"} fontWeight={"bold"} >

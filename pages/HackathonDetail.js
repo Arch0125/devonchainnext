@@ -1,8 +1,23 @@
 import { Button, Divider, Flex ,Input,Text} from '@chakra-ui/react';
-import React from 'react';
+import React, { useState } from 'react';
 import HackerList from '../src/components/HackerList';
+import UseContract from '../src/hooks/UseContract';
+import { useEffect } from 'react';
 
 const HackathonDetail = () => {
+    const[detlist,setDetlist]=useState([]);
+    const[parts,setParts]=useState([]);
+
+    const contract = UseContract();
+
+    const getHackDetails=async()=>{
+        var details = await contract.getHackathon(1);
+        var participants =  await contract.getParticipants(1);
+        setDetlist(details)
+        setParts(participants);
+        console.log(parts)
+    }
+
     return ( 
         <Flex flexDirection={'row'} width={'100vw'} height={'100vh'} bgColor={'gray.200'} wrap={'wrap'} >
             <Flex alignItems={'center'} width={'70%'} flexDirection={'column'} height={'100vh'} >
