@@ -6,7 +6,7 @@ const UseContract = () => {
     const { data: signer, isError, isLoading } = useSigner()
 
     const contract = useContract({
-        addressOrName: '0xF7B10D9e06eA54871cD07c723148d85f2C206658',
+        addressOrName: '0x3F0e64764B50db7A1E07716fCF21200ACD418Eb3',
         contractInterface: DevOnChainABI,
         signerOrProvider: signer,
     })
