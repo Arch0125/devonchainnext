@@ -33,6 +33,10 @@ const HackerList = () => {
         console.log(parts)
     }
 
+    async function setsubmission(addr,id){
+        await contract.setSubmit(addr,id);
+    }
+
     return ( 
         <Flex width={'100%'} flexDirection={'column'} color={'blackAlpha.700'} mt={'20px'} >
             <Button onClick={getHackDetails} variant={"solid"} colorScheme={'purple'} width={'fit-content'} textColor={'white'} mb={'10px'} height={'fit-content'} p={'5px'} fontSize={'sm'} >Refresh List</Button>
@@ -51,7 +55,7 @@ const HackerList = () => {
                         <Td>{parts[2]}</Td>
                         <Td>
                             {
-                                (parts[2]==='Accepted')?<Button variant={"solid"} colorScheme={'purple'} >Accept</Button>:<div>✅</div>
+                                (parts[2]==='Accepted')?<Button variant={"solid"} colorScheme={'purple'} onClick={()=>setsubmission(parts[0],'1')} >Accept</Button>:<div>✅</div>
                             }
                         </Td>
                     </Tr>

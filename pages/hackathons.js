@@ -1,4 +1,4 @@
-import { Divider, Flex,Text,Box } from '@chakra-ui/react';
+import { Divider, Flex,Text,Box, Button } from '@chakra-ui/react';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import UseContract from '../src/hooks/UseContract';
@@ -17,13 +17,12 @@ const Hackathons = () => {
         console.log(count);
     }
 
-    gethacks();
-
     return ( 
         <Flex flexDirection={"column"} height={"100vh"} width={"100vw"} bgColor={"white"} padding={'40px'} >
             <Text color={"purple.700"} fontSize={"4xl"} fontFamily={"heading"} fontWeight={"bold"} >
                 Hackathons Organized
             </Text>
+            <Button colorScheme={'purple'} onClick={gethacks} >Refresh List</Button>
             <Box width={"90vw"} height={"1px"} bgColor={"purple"} />
             <Flex flexDirection={"row"} width={"100vw"} height={"fit-content"} wrap={"wrap"} padding={'30px'} >
             {
