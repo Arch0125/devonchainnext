@@ -46,16 +46,19 @@ const CertificateList = () => {
                     </Tr>
                     </Thead>
                     <Tbody>
+                    <Tr>
                     {
                        Object.keys(certs).map((cert,index)=>(
-                        <Tr>
+                        <>
                             <Td>{certs[index].org}</Td>
                             <Td>
                                 <Link href={certs[index].hash} ><Button>View Certificate</Button></Link>
                             </Td>
-                        </Tr>
+                        </>
+                        
                        ))
                     }
+                    </Tr>
                     </Tbody>
                 </Table>
             </TableContainer>
