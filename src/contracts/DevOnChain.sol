@@ -21,6 +21,13 @@ contract DevOnChain{
         string status;
     }
 
+    struct Certificate{
+        uint256 hackid;
+        address hacker;
+        address org;
+        string hash;
+    }
+
     struct Sponsor{
         string name;
         string amount;
@@ -34,6 +41,8 @@ contract DevOnChain{
     mapping(address => mapping(uint256 => Participant)) public myapplications;
     mapping(uint256 => Sponsor)public sponsors;
     mapping(address => mapping(uint256 => Sponsor)) public mysponsors;
+    mapping(uint256 => Certificate)public certificates;
+    mapping(address => mapping(uint256=>Certificate))public mycertificates;
 
     function addHackathon(string memory _name, string memory _date, string memory _mode, address prize, string memory _desc) public {
         ++hackid;
@@ -57,9 +66,11 @@ contract DevOnChain{
         mysponsors[org][_key].status='Approved';
     }
 
-    function setWinner(address hacker, uint256 _key)public{
+    function setWinner(address hacker, uint256 _key, string memory _hash)public{
         participants[msg.sender][_key].status='Winner';
         myapplications[hacker][_key].status='Winner';
+        certificates[_key]=Certificate(_key,hacker,msg.sender,_hash);
+        mycertificates[hacker][_key]=Certificate(_key,hacker,msg.sender,_hash);
     }
 
     function getHackList(uint256 _key) public view returns(Hackathon memory){
@@ -84,6 +95,10 @@ contract DevOnChain{
 
     function getMySponsors(uint256 _key)public view returns(Sponsor memory){
         return mysponsors[msg.sender][_key];
+    }
+
+    function getMyCertificates(uint256 _key) public view returns(Certificate memory){
+        return mycertificates[msg.sender][_key];
     }
 
     function getCount() public view returns(uint256){

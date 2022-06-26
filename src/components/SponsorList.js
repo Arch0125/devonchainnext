@@ -5,6 +5,7 @@ import { useSendTransaction } from 'wagmi';
 import { useState } from 'react';
 import { useSigner } from 'wagmi';
 import { ethers } from 'ethers';
+import { Link } from '@chakra-ui/react';
 
  const SponsorList = () => {
 
@@ -47,7 +48,7 @@ import { ethers } from 'ethers';
                     <Button color={'blueviolet'} fontSize={'xl'} >{reqs[index].name}</Button>
                         <ButtonGroup>
 
-                        <Button variant={'solid'} colorScheme={'purple'}>View Proposal</Button>
+                        <Link href={reqs[index].hash} ><Button variant={'solid'} colorScheme={'purple'}>View Proposal</Button></Link>
                         <Button variant={'solid'} onClick={()=>approveSponsor(reqs[index].amount,'0x6549a235E999ED06d2bD8D6F6382176Ce3c3f17D',index)} colorScheme={'purple'}>Accept Proposal of {reqs[index].amount} MATIC </Button>
                     </ButtonGroup>
                     </>
